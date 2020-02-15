@@ -54,7 +54,7 @@ def s3bucket(request):
             handle_uploaded_file(request.FILES['file'])
             uploadfile = "/root/demoproject/myapp/static/upload/"+filename
             boto3connection(bucketname, filename, uploadfile)
-            context['error']="The NEW BUKET is created : " + bucketname + " and The FIle is Uploaded Successfully in that Bucket"
+            context['error']="The NEW CONTAINER is created : " + bucketname + " and The FIle is Uploaded Successfully in that Bucket"
             return render(request, 'myapp/message.html', context)
     else:
         student = StudentForm()
