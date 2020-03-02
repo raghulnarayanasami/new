@@ -62,9 +62,9 @@ def s3bucket(request):
 
 def boto3connection(bucketname, filename, uploadfile):
 
-    host='https://aos.tcsecp.com'
-    access_key = '47cd575d659d468aa5aa3f7a4cfa8a89'
-    secret_key = 'a87b5287abb7484683e81f78c1c2cbf9'
+    host='http://aos.tcsecp.com'
+    access_key = '0fa1569111dd4217911739194728038d'
+    secret_key = 'a8f16169238841e2a78ca2e1471ca93d'
 
     s3=boto3.resource('s3',aws_access_key_id=access_key,aws_secret_access_key=secret_key, endpoint_url=host,)
 
@@ -72,9 +72,9 @@ def boto3connection(bucketname, filename, uploadfile):
     s3.Object(bucketname,filename).upload_file(Filename=uploadfile)
 
 def bucketlist():
-    host='https://aos.tcsecp.com'
-    access_key = '47cd575d659d468aa5aa3f7a4cfa8a89'
-    secret_key = 'a87b5287abb7484683e81f78c1c2cbf9'
+    host='http://aos.tcsecp.com'
+    access_key = '0fa1569111dd4217911739194728038d'
+    secret_key = 'a8f16169238841e2a78ca2e1471ca93d'
 
     s3=boto3.resource('s3',aws_access_key_id=access_key,aws_secret_access_key=secret_key, endpoint_url=host,)
     bucket_list = s3.buckets.all()
