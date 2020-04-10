@@ -1,11 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Storage</title>
-<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/451px-Tata_logo.svg.png" alt="TCS"/>
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="shortcut icon" href="{% static "title.png" %}" alt="TCS"/>
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -18,7 +18,22 @@
 <script src="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<link href="{% static "bootstrap.min.css" %}" rel="stylesheet">
+<link href="{% static "icon.css" %}" rel="stylesheet">
+<script src="{% static "bootstrap.min.js" %}"></script>
+<script src="{% static "jquery-1.11.1.min.js" %}"></script>
+<script src="{% static "jquery-3.3.1.js" %}"></script
+<script src="{% static "jquery.dataTables.min.js" %}"></script>
+<script src="{% static "dataTables.bootstrap.min.js" %}"></script>
+<script src="{% static "bootstrap.css" %}"></script>
+<script src="{% static "dataTables.bootstrap4.min.css" %}"></script>
+<link href="{% static "bootstrap3.3.7.min.css" %}" rel="stylesheet">
+<script src="{% static "jquery3.2.1.min.js" %}"></script>
+<script src="{% static "bootstrap3.3.7.min.js" %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static "datatables.min.css" %}" />
+<script type="text/javascript" src="{% static "datatables.min.js" %}"></script>
+
 <style>
 form {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -85,7 +100,7 @@ table {
     -moz-border-radius:6px;
 }
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+/*@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');*/
 @media(min-width:768px) {
     body {
         margin-top: 50px;
@@ -267,8 +282,8 @@ padding: 0px;
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
-                <img src="https://www.sarahdownsltd.com/wp-content/uploads/2016/03/sarah-downs-clients-01.png" alt="TCS" style="height:50px;width:50px;"/>
+            <a class="navbar-brand">
+		<img src="{% static "tcs1.png" %}" alt="TCS" style="height:25px;width:40px;margin-top: 10px;"/>
             </a>
         </div>
         <!-- Top Menu Items -->

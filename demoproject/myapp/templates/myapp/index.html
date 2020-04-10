@@ -1,12 +1,13 @@
+{% load static %}
  <html>
         <head>
             <title>Login</title>
-  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/451px-Tata_logo.svg.png" alt="TCS"/>
+<link rel="shortcut icon" href="{% static "title.png" %}" alt="TCS"/>
 
 <link rel="stylesheet" href="index.css">
 <style>
 .bod{
-background-image:url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/07/55/275811e90413776.jpg");
+/*background-image:url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/07/55/275811e90413776.jpg");*/
 /*background-image:url("https://cdn.dribbble.com/users/3653942/screenshots/6982901/comp_10.gif");*/
 height: 100%;
 background-position: center;
@@ -84,11 +85,11 @@ display: inline-block;
 }
                 </style>
         </head>
-        <body class="bod" >
+        <body class="bod" background="{% static "background.jpg" %}" >
 
     <div class="tit">
-    <img src="https://cdn.freebiesupply.com/logos/large/2x/tata-consultancy-services-logo-black-and-white.png" alt="Paris"/>
-
+<!--    <img src="https://cdn.freebiesupply.com/logos/large/2x/tata-consultancy-services-logo-black-and-white.png" alt="Paris"/>-->
+ <img src="{% static "tata.png" %}" alt="TCS"/>
                 <div class="logBox">
 
       <div class="content">
