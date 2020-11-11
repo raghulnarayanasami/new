@@ -5,4 +5,5 @@ pip install django
 pip install setuptools==49.3.0
 pip install boto3
 cd demoproject
-nohup python3 manage.py runserver localhost:8000 &
+for i in `hostname -I`; do nohup python3 manage.py runserver $i:8000 & done
+
